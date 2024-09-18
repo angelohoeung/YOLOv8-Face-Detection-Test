@@ -17,7 +17,8 @@ model = YOLO(model_path)
 image_path1 = "the-rock.jpg"
 image_path2 = "operating-room.jpg"
 image_path3 = "operating-room2.jpg"
-output = model(Image.open(image_path1))
+image_path4 = "operating-room3.jpg"
+output = model(Image.open(image_path4))
 results = Detections.from_ultralytics(output[0])
 
 # Convert image to numpy array for visualization
