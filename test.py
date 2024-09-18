@@ -23,7 +23,7 @@ results = Detections.from_ultralytics(output[0])
 # Convert image to numpy array for visualization
 img_np = output[0].orig_img  # Original image as a numpy array
 
-# Fix color format by converting BGR to RGB (if necessary)
+# Fix color format by converting BGR to RGB
 img_np_rgb = img_np[..., ::-1]  # Flip the last channel
 
 # Create a plot to visualize the image and detections
